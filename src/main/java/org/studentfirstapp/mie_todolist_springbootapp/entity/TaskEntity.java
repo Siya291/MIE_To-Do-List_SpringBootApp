@@ -22,17 +22,20 @@ public class TaskEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "Category")
-    private TaskCategoryEnum category;
+    @Column(name = "Name", nullable = false)
+    private String taskName;
+
+    @Column(name = "Category", nullable = false)
+    private TaskCategoryEnum taskCategoryEnum;
 
     @Column(name = "Description", nullable = false)
     private String taskDescription;
 
     @Column(name = "Due_Date", nullable = false)
-    private Timestamp dueDate;
+    private Timestamp taskDueDate;
 
     @Column(name = "Priority", nullable = false)
-    private int priority;
+    private int taskPriority;
 
     @Column(name = "IsCompleted", nullable = false)
     private boolean isCompleted;
