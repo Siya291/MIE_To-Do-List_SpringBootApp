@@ -7,6 +7,7 @@ import java.sql.Timestamp;
 public record TaskResponseDto(
         Long id,
         String taskName,
+        String keyword,
         TaskCategoryEnum taskCategoryEnum,
         String taskDescription,
         Timestamp taskDueDate,

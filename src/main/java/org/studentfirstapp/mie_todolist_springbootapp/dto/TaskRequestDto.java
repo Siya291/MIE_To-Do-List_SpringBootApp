@@ -10,6 +10,10 @@ public record TaskRequestDto(
         @Size(max = 100, message = "Task name must not exceed 100 characters")
         String taskName,
 
+        @NotBlank(message = "Keyword is required")
+        @Size(max = 15, message = "Keyword must not exceed 15 characters")
+        String keyword,
+
         @NotBlank(message = "Category Type is required")
         @Size(max = 30, message = "Category type must not exceed 30 characters")
         TaskCategoryEnum taskCategoryEnum,
