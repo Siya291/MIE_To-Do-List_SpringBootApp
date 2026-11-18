@@ -1,16 +1,14 @@
-package org.studentfirstapp.mie_todolist_springbootapp.entity;
+package org.taskapp.mie_todolist_springbootapp.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import org.studentfirstapp.mie_todolist_springbootapp.enums.TaskCategoryEnum;
+import org.taskapp.mie_todolist_springbootapp.enums.TaskCategoryEnum;
 
 import java.sql.Timestamp;
 
 @RequiredArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity

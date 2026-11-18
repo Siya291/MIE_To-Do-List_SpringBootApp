@@ -1,13 +1,13 @@
-package org.studentfirstapp.mie_todolist_springbootapp.service;
+package org.taskapp.mie_todolist_springbootapp.service;
 
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
-import org.studentfirstapp.mie_todolist_springbootapp.dto.TaskRequestDto;
-import org.studentfirstapp.mie_todolist_springbootapp.dto.TaskResponseDto;
-import org.studentfirstapp.mie_todolist_springbootapp.entity.TaskEntity;
-import org.studentfirstapp.mie_todolist_springbootapp.exception.DuplicateResourceException;
-import org.studentfirstapp.mie_todolist_springbootapp.exception.ResourceNotFoundException;
-import org.studentfirstapp.mie_todolist_springbootapp.repository.TaskRepository;
+import org.taskapp.mie_todolist_springbootapp.dto.TaskRequestDto;
+import org.taskapp.mie_todolist_springbootapp.dto.TaskResponseDto;
+import org.taskapp.mie_todolist_springbootapp.entity.TaskEntity;
+import org.taskapp.mie_todolist_springbootapp.exception.DuplicateResourceException;
+import org.taskapp.mie_todolist_springbootapp.exception.ResourceNotFoundException;
+import org.taskapp.mie_todolist_springbootapp.repository.TaskRepository;
 
 import java.util.List;
 
@@ -55,7 +55,7 @@ public class TaskService {
     }
 
     @Transactional
-    public TaskResponseDto updateStudent(Long id, TaskRequestDto request) {
+    public TaskResponseDto updateTask(Long id, TaskRequestDto request) {
         TaskEntity task = findTaskOrThrow(id);
         boolean keywordAlreadyUsed = taskRepository.existsByKeywordAndId(request.keyword(), id);
 

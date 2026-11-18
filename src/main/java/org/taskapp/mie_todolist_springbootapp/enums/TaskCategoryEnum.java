@@ -1,4 +1,4 @@
-package org.studentfirstapp.mie_todolist_springbootapp.enums;
+package org.taskapp.mie_todolist_springbootapp.enums;
 
 public enum TaskCategoryEnum {
     PERSONAL,

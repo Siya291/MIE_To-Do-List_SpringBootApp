@@ -1,7 +1,7 @@
-package org.studentfirstapp.mie_todolist_springbootapp.dto;
+package org.taskapp.mie_todolist_springbootapp.dto;
 
 import jakarta.validation.constraints.*;
-import org.studentfirstapp.mie_todolist_springbootapp.enums.TaskCategoryEnum;
+import org.taskapp.mie_todolist_springbootapp.enums.TaskCategoryEnum;
 
 import java.sql.Timestamp;
 
@@ -14,8 +14,7 @@ public record TaskRequestDto(
         @Size(max = 15, message = "Keyword must not exceed 15 characters")
         String keyword,
 
-        @NotBlank(message = "Category Type is required")
-        @Size(max = 30, message = "Category type must not exceed 30 characters")
+        @NotNull(message = "Category Type is required")
         TaskCategoryEnum taskCategoryEnum,
 
         @NotBlank(message = "Task description is required")

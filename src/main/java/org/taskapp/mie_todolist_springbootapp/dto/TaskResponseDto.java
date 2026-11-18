@@ -1,6 +1,6 @@
-package org.studentfirstapp.mie_todolist_springbootapp.dto;
+package org.taskapp.mie_todolist_springbootapp.dto;
 
-import org.studentfirstapp.mie_todolist_springbootapp.enums.TaskCategoryEnum;
+import org.taskapp.mie_todolist_springbootapp.enums.TaskCategoryEnum;
 
 import java.sql.Timestamp;
 

@@ -1,4 +1,4 @@
-package org.studentfirstapp.mie_todolist_springbootapp;
+package org.taskapp.mie_todolist_springbootapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
