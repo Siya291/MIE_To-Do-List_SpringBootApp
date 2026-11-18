@@ -25,6 +25,9 @@ public class TaskEntity {
     @Column(name = "Name", nullable = false)
     private String taskName;
 
+    @Column(name = "Keyword", nullable = false, unique = true)
+    private String keyword;
+
     @Column(name = "Category", nullable = false)
     private TaskCategoryEnum taskCategoryEnum;
 
