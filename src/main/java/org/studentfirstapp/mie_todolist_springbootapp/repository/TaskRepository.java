@@ -7,9 +7,9 @@ import java.util.Optional;
 
 public interface TaskRepository extends JpaRepository<TaskEntity, Long> {
 
-    boolean exixtsByKeyword(String keyword);
+    boolean existsByKeyword(String keyword);
 
-    boolean exixtsByKeywordAndId(String keyword, Long id);
+    boolean existsByKeywordAndId(String keyword, Long id);
 
     Optional<TaskEntity> findByKeyword(String keyword);
 }
